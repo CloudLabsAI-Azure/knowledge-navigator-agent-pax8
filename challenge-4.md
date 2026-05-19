@@ -1,0 +1,94 @@
+# Challenge 04: Connect Topic to Agent Flow and Test End-to-End
+
+## Introduction
+
+In the previous challenge, you created the EmailDocument topic and built an agent flow that sends document access request emails. However, the topic and the flow are not yet connected - the EmailDocument topic currently collects employee inputs but doesn't trigger the email action.
+
+In this challenge, you'll bring everything together by wiring the **EmailDocument** topic to the published **Email Document Flow**. You'll map the topic's conversation variables (employee email, document name, and reason) to the flow's input parameters so that when an employee completes the conversation, the flow fires automatically and sends the request email. Finally, you'll run end-to-end tests to validate both the knowledge search experience and the email action flow.
+
+## Challenge Objectives
+
+- Connect the **EmailDocument** topic to the published **Email Document Flow** by adding it as a tool action
+- Map topic variables (email, document name, description) to the corresponding flow input parameters
+- Test the knowledge search experience to confirm generative answers work from the SharePoint knowledge base
+- Test the EmailDocument topic end-to-end and verify that the document access request email is received in the inbox
+
+## Prerequisites
+
+Before starting this challenge, ensure you have:
+- Completed Challenge 3 (created the EmailDocument topic and the **Email Document Flow**)
+- The **Email Document Flow** is published and active
+- Access to the lab email inbox to verify received emails
+
+## Steps to Complete
+
+### Step 1: Connect EmailDocument Topic to Flow
+
+1. In your **Internal Knowledge Navigator** agent, click **Topics** in the navigation pane.
+
+1. Open the **EmailDocument** topic.
+
+1. Navigate through the topic flow and find where all variables are collected (at the bottom).
+
+1. After the **Message** node at the end, select the **+** icon below to add a **new node**.
+
+1. To add the **Email Document Flow** tool:
+   - Select **Add a tool**.
+   - Select **Email Document Flow**.
+
+1. Map the flow inputs using the ellipsis (**...**) icon:
+   - **EmployeeEmail:** Select the email variable from your topic
+   - **DocumentName:** Select the document name variable
+   - **DocumentDescription:** Select the document reason variable
+
+      > **Note:** Use the ellipsis icon to select from available topic variables.
+
+1. Click on **Save**.
+
+### Step 2: Test Knowledge Search
+
+1. Click the **Test** button to open the test panel on the right side.
+
+1. Type: `Where can I find information about employee benefits?`
+
+1. Verify the agent searches the SharePoint knowledge base and provides relevant information from company documents.
+
+1. Try another query: `What are the expense reimbursement policies?`
+
+1. Verify generative answers are provided from the knowledge base without calling any flows.
+
+   > **Note:** The agent answers knowledge search queries automatically using the SharePoint knowledge source connected in Challenge 2.
+
+### Step 3: Test EmailDocument Topic
+
+1. Click **New test session** to start a fresh conversation.
+
+1. Type: `Raise a email document request`
+
+1. Provide the document name when asked (e.g., "HR Handbook").
+
+1. Provide your Lab email address.
+
+1. Provide a brief reason (e.g., "Need to review HR policies").
+
+1. Verify the agent confirms that the request has been submitted.
+
+1. Check your email inbox (**<inject key="AzureAdUserEmail"></inject>**) to verify you received the document access request email with the document name, reason, and requester email.
+
+## Success Criteria
+
+- The **EmailDocument** topic is successfully connected to the **Email Document Flow** via the tool action node
+- Topic variables (email address, document name, reason) are correctly mapped to flow input parameters (EmployeeEmail, DocumentName, DocumentDescription)
+- Knowledge search test queries return accurate generative answers sourced from the SharePoint knowledge base
+- The EmailDocument topic test triggers the flow and sends the document access request email
+- The email is received in the lab inbox with the correct document name, reason, and requester details
+
+## Additional Resources
+
+- [Create topics with Copilot](https://learn.microsoft.com/microsoft-copilot-studio/nlu-authoring)
+- [Call flows from topics](https://learn.microsoft.com/microsoft-copilot-studio/advanced-flow)
+- [Work with variables](https://learn.microsoft.com/microsoft-copilot-studio/authoring-variables)
+
+Click **Next** at the bottom of the page to proceed to the next page.
+
+   ![](./media/auto-it-gt-gr-g7.png)
