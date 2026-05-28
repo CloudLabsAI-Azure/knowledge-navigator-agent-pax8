@@ -39,15 +39,14 @@
                 "UnlockingRules": [
                     {
                         "UnlockDependency": "Validations",
-                        "UnlockCriteria": "Completion Percentage",
+                        "UnlockCriteria": "Execution",
                         "DependentValidations": [
                             "1b18cb99-3de1-4ea8-8c3f-1839a06f8bf4",
                             "09e05d19-df23-42fd-8688-4262e3dcdb95"
                         ]
                     }
                 ]
-            }
-                
+            }      
         ]
     }
 ]
