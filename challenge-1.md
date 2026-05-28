@@ -30,7 +30,7 @@ https://github.com/CloudLabsAI-Azure/hack-in-a-day-data/archive/refs/heads/knowl
 1. Navigate to the **Microsoft 365** portal:
 
    ```
-   https://www.office.com
+   https://myapps.microsoft.com
    ```
 
 1. Sign in with the provided credentials:
@@ -83,7 +83,7 @@ https://github.com/CloudLabsAI-Azure/hack-in-a-day-data/archive/refs/heads/knowl
    https://copilotstudio.microsoft.com
    ```
 
-1. Ensure the environment is **ODL_User<inject key="DeploymentID" enableCopy="false"></inject>**.
+1. Ensure the environment is **ODL_User<inject key="DeploymentID" enableCopy="false"></inject>'s Environment**.
 
 1. In Copilot Studio, select **Agents** from the left navigation pane, and then click **Create blank agent** to start creating a new agent.
 
