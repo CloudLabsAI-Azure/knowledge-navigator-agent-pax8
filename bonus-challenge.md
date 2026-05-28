@@ -87,6 +87,13 @@ Congratulations on completing the core lab! In this bonus challenge, you will ex
    - **Onboarding document request:** During the onboarding flow, request a document and verify the email is sent.
    - **Original EmailDocument topic:** Confirm the original flow still works correctly.
 
+<validation step="82ef8e69-4a60-4619-b1ec-f506abdfec41" />
+ 
+> **Congratulations** on completing the Challenge! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding Challenge. If you receive a success message, you can proceed to the next Challenge. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
+
 ## Success Criteria
 
 - SharePoint knowledge source expanded to 40+ documents
