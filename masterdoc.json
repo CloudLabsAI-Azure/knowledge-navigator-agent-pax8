@@ -31,7 +31,11 @@
             },
             {
                 "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/knowledge-navigator-agent-pax8/refs/heads/main/challenge-5.md",
-                "Order": 7,
+                "Order": 7
+            },
+                        {
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/knowledge-navigator-agent-pax8/refs/heads/main/bonus-challenge.md",
+                "Order": 8,
                 "UnlockingRules": [
                     {
                         "UnlockDependency": "Validations",
@@ -42,10 +46,6 @@
                         ]
                     }
                 ]
-            },
-                        {
-                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/knowledge-navigator-agent-pax8/refs/heads/main/bonus-challenge.md",
-                "Order": 8
             }
                 
         ]
