@@ -87,7 +87,7 @@ Congratulations on completing the core lab! In this bonus challenge, you will ex
    - **Onboarding document request:** During the onboarding flow, request a document and verify the email is sent.
    - **Original EmailDocument topic:** Confirm the original flow still works correctly.
 
-<validation step="82ef8e69-4a60-4619-b1ec-f506abdfec41" />
+<validation step="ca40f9db-1d79-45a1-990b-81d078df6873" />
  
 > **Congratulations** on completing the Challenge! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding Challenge. If you receive a success message, you can proceed to the next Challenge. 

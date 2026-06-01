@@ -66,7 +66,7 @@ Test the topics you created and the agent's knowledge search capability:
 
 5. Check your email inbox (**<inject key="AzureAdUserEmail"></inject>**) to verify you received the document access request email with the document name, reason, and requester email.
 
-<validation step="e3108aa0-e0a3-40eb-aaf7-a1af8efb199e" />
+<validation step="9751e1d6-33e8-49fa-96b2-31b3df217ba5" />
  
 > **Congratulations** on completing the Challenge! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding Challenge. If you receive a success message, you can proceed to the next Challenge. 
