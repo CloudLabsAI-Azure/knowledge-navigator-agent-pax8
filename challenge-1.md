@@ -11,7 +11,7 @@ In this challenge, you will create an AI-powered Internal Knowledge Navigator us
 Please download and extract the datasets required for this challenge here:
 
 ```
-https://github.com/CloudLabsAI-Azure/hack-in-a-day-data/archive/refs/heads/knowledge-nav.zip
+https://github.com/CloudLabsAI-Azure/hack-in-a-day-data/archive/refs/heads/knowledge-datasets.zip
 ```
 
 > **Note:** For this challenge, you will only upload 10 documents from the HR, Finance, and IT folders. The remaining documents will be used in the Bonus Challenge if you finish early.
@@ -30,7 +30,7 @@ https://github.com/CloudLabsAI-Azure/hack-in-a-day-data/archive/refs/heads/knowl
 1. Navigate to the **Microsoft 365** portal:
 
    ```
-   https://myapps.microsoft.com
+   https://www.office.com
    ```
 
 1. Sign in with the provided credentials:
@@ -56,7 +56,7 @@ https://github.com/CloudLabsAI-Azure/hack-in-a-day-data/archive/refs/heads/knowl
 
 1. Once the site is created, navigate to the **Documents** section.
 
-1. Click **Upload** > **Files** and upload the following 10 documents from the extracted dataset  (from /documents/initial10):
+1. Click **Upload** > **Files** and upload the following 10 documents from the extracted dataset (from the HR, Finance, and IT folders):
 
    - Contoso_HR_Handbook.docx
    - Contoso_Employee_Leave_Policy.docx
@@ -73,7 +73,10 @@ https://github.com/CloudLabsAI-Azure/hack-in-a-day-data/archive/refs/heads/knowl
 
 1. **Copy the SharePoint site URL** from the browser address bar and paste it into **Notepad** for use in upcoming steps.
 
-   Example format: **https://yourdomain.sharepoint.com/sites/contoso-documents-<inject key="DeploymentID" enableCopy="false"></inject>**
+   > **Important:** Before copying the URL, click the site name in the breadcrumb (top-left of the page) to navigate back to the site home page. The URL must point to the site root, not the Documents library. Copying from the Documents library page will result in an error in Challenge 2.
+
+   - **Correct format:** `https://yourdomain.sharepoint.com/sites/contoso-documents-######`
+   - **Incorrect (do not copy this):** `https://yourdomain.sharepoint.com/sites/contoso-documents-######/Shared%20Documents/Forms/AllItems.aspx`
 
 ### Step 2: Create a New Agent
 
@@ -83,7 +86,7 @@ https://github.com/CloudLabsAI-Azure/hack-in-a-day-data/archive/refs/heads/knowl
    https://copilotstudio.microsoft.com
    ```
 
-1. Ensure the environment is **ODL_User<inject key="DeploymentID" enableCopy="false"></inject>'s Environment**.
+1. Ensure the environment is **ODL_User<inject key="DeploymentID" enableCopy="false"></inject>**.
 
 1. In Copilot Studio, select **Agents** from the left navigation pane, and then click **Create blank agent** to start creating a new agent.
 
@@ -135,7 +138,7 @@ https://github.com/CloudLabsAI-Azure/hack-in-a-day-data/archive/refs/heads/knowl
 
 1. Note that specific knowledge questions won't work yet. You'll add knowledge sources in the next challenge.
 
-<validation step="e3108aa0-e0a3-40eb-aaf7-a1af8efb199e" />
+<validation step="1b18cb99-3de1-4ea8-8c3f-1839a06f8bf4" />
  
 > **Congratulations** on completing the Challenge! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding Challenge. If you receive a success message, you can proceed to the next Challenge. 

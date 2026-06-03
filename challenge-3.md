@@ -4,7 +4,7 @@
 
 Your Internal Knowledge Navigator agent can now answer employee questions by searching through the Contoso SharePoint knowledge base. However, a truly useful enterprise agent should go beyond just providing answers - it should also be able to take actions on behalf of employees. One common workplace scenario is when an employee needs a specific document sent to their inbox or wants to submit a formal access request for restricted content.
 
-In this challenge, you'll extend your agent's capabilities by creating an agent flow that sends document access request emails via the Office 365 Outlook connector. This flow will be created directly within Copilot Studio and will be ready to integrate with a conversational topic in Challenge 4.
+In this challenge, you'll extend your agent's capabilities by creating an agent flow that sends document access request emails via the Office 365 Outlook connector. This flow will be created directly within Copilot Studio and will be ready to integrate with a conversational topic in Challenge 5.
 
 ## Challenge Objectives
 
@@ -87,11 +87,15 @@ Before starting this challenge, ensure you have:
 
 1. In the **Confirmation required** pane, select **I have verified this request and trust the source**, and then choose **Allow access**.
 
+   > **Note:** If you see a warning about **Copilot Credits**, this is informational only and will not impact the lab. You can safely dismiss it and continue.
+
 1. Configure the email action:
 
    - **To:** Enter **<inject key="AzureAdUserEmail"></inject>**
    
    - **Subject:** Type: `Document Access Request - ` and then select **DocumentName** from dynamic content.
+
+      > **How to add dynamic content:** To insert a dynamic value (a flow input variable), click the **lightning bolt icon** (![dynamic content icon]) that appears inside the field, or click the field and then select the **lightning bolt** from the mini toolbar. This opens the dynamic content picker where you can select from your flow inputs (DocumentName, DocumentDescription, EmployeeEmail).
    
    - **Body:** Enter the following text and add dynamic content where indicated:
 
@@ -100,9 +104,9 @@ Before starting this challenge, ensure you have:
 
       An employee has submitted a request for access to the following document.
 
-      Requested Document: [Click and add DocumentName dynamic content]
-      Reason: [Click and add DocumentDescription dynamic content]
-      Requested By: [Click and add EmployeeEmail dynamic content]
+      Requested Document: [Click the lightning bolt and select DocumentName]
+      Reason: [Click the lightning bolt and select DocumentDescription]
+      Requested By: [Click the lightning bolt and select EmployeeEmail]
 
       Please review the request and share the document with the employee.
 
@@ -138,13 +142,6 @@ Before starting this challenge, ensure you have:
    ```
 
 1. Click **Save** to save the renamed flow.
-
-<validation step="82ef8e69-4a60-4619-b1ec-f506abdfec41" />
- 
-> **Congratulations** on completing the Challenge! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding Challenge. If you receive a success message, you can proceed to the next Challenge. 
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
 
 ## Success Criteria
 

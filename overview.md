@@ -36,13 +36,14 @@ By the end of this Hack in a Day, you will learn how to:
 
 ## Hack in a Day Format: Challenge-Based
 
-This hack in a day follows a challenge-based format with five stages that build a complete Internal Knowledge Navigator Agent. Each challenge focuses on a specific capability:
+This hack in a day follows a challenge-based format with six stages that build a complete Internal Knowledge Navigator Agent. Each challenge focuses on a specific capability:
 
 - **Challenge 1: Create Agent and SharePoint Site** - Set up a Copilot Studio agent, create a SharePoint site, and upload 10 key Contoso documents
 - **Challenge 2: Connect SharePoint Knowledge Source** - Connect SharePoint to your agent as a knowledge source
 - **Challenge 3: Create Agent Flow for Document Access Request** - Build an agent flow within Copilot Studio that sends a document access request email via Outlook
-- **Challenge 4: Create Topics Using Generative AI** - Use AI to generate a conversational topic and connect it to your agent flow
-- **Challenge 5: Publish Agent to Microsoft Teams** - Deploy your agent to Teams and test all topics and flows
+- **Challenge 4: Build a Department Support Topic with Conditional Branching** - Manually author a topic from scratch with department selection menus, conditional branching logic, and a redirect to the document request topic
+- **Challenge 5: Connect Topic to Agent Flow and Test End-to-End** - Wire the EmailDocument topic to the published flow, map variables to flow inputs, and run end-to-end tests
+- **Challenge 6: Publish Agent to Microsoft Teams** - Deploy your agent to Teams and test all topics and flows
 
 Throughout each challenge, you will:
 - Build AI agent capabilities using no-code tools
@@ -52,7 +53,7 @@ Throughout each challenge, you will:
 
 ## Bonus Challenge (For Early Finishers)
 
-If you complete all five challenges ahead of time, a bonus challenge is available. In the bonus challenge, you will expand the agent into a full enterprise-grade assistant by uploading the remaining 30+ Contoso documents, creating a second generative AI topic for new employee onboarding, and re-publishing the enhanced agent to Teams.
+If you complete all six challenges ahead of time, a bonus challenge is available. In the bonus challenge, you will expand the agent into a full enterprise-grade assistant by uploading the remaining 30+ Contoso documents, creating a second generative AI topic for new employee onboarding, and re-publishing the enhanced agent to Teams.
 
 ## Challenge Overview
 
@@ -60,7 +61,9 @@ You start by creating a new agent in Microsoft Copilot Studio, setting up a Shar
 
 Next, you build an agent flow within Copilot Studio (no external Power Automate portal needed) that sends a document access request email via the Office 365 Outlook connector. When an employee asks for a document, the agent collects the document name, email address, and reason, then sends a request to the admin team to review and share it.
 
-After that, you use Copilot Studio's generative AI feature to create a conversational topic by describing what you want in plain language. The AI generates trigger phrases, conversation flows, and variable capturing for you. The document access topic calls your agent flow. The agent also answers document search queries on its own using the SharePoint knowledge source.
+After that, you manually author a **DepartmentSupport** topic from scratch - no AI generation. You design the conversation flow node by node, configure a department selection question with four options (HR, Finance, IT, General), create conditional branches that respond with department-specific guidance referencing the relevant Contoso documents, and add a redirect that hands off to the document request topic when the employee wants a document emailed.
+
+Next, you use Copilot Studio's generative AI feature to create the EmailDocument conversational topic by describing what you want in plain language. The AI generates trigger phrases, conversation flows, and variable capturing for you. You then wire this topic to your agent flow by mapping conversation variables to flow input parameters and run end-to-end tests.
 
 Finally, you publish your agent to Microsoft Teams, test all topics and flows, and make it available to your organization.
 

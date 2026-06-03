@@ -46,7 +46,7 @@ Before starting this challenge, ensure you have:
    https://yourdomain.sharepoint.com/sites/contoso-documents-######
    ```
 
-   > **Tip:** Go back to your SharePoint site in another tab and copy it from the address bar and paste it.
+   > **Important:** The URL must point to the SharePoint site root (ending in `/sites/contoso-documents-######`). Do not use a Documents library URL, a file share link, or a URL that contains `/Shared%20Documents` - these will cause an error. If needed, open your SharePoint site in a new tab, click the site name in the breadcrumb to go to the home page, and copy the URL from there.
 
 1. Select **Add to agent** to add the SharePoint knowledge source.
 
