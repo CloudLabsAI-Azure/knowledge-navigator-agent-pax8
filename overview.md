@@ -31,19 +31,22 @@ By the end of this Hack in a Day, you will learn how to:
 - Connect SharePoint as a knowledge source with company documents
 - Build an agent flow within Copilot Studio to send document access requests via Outlook
 - Use generative AI to create conversational topics from natural language descriptions
+- Manually author topics with conditional branching and multi-department routing
+- Customize system topics (Fallback, Greeting) and generative AI settings to tune agent behavior
 - Connect topics to agent flows and map variables between them
 - Deploy and test your agent in Microsoft Teams
 
 ## Hack in a Day Format: Challenge-Based
 
-This hack in a day follows a challenge-based format with six stages that build a complete Internal Knowledge Navigator Agent. Each challenge focuses on a specific capability:
+This hack in a day follows a challenge-based format with seven stages that build a complete Internal Knowledge Navigator Agent. Each challenge focuses on a specific capability:
 
 - **Challenge 1: Create Agent and SharePoint Site** - Set up a Copilot Studio agent, create a SharePoint site, and upload 10 key Contoso documents
 - **Challenge 2: Connect SharePoint Knowledge Source** - Connect SharePoint to your agent as a knowledge source
 - **Challenge 3: Create Agent Flow for Document Access Request** - Build an agent flow within Copilot Studio that sends a document access request email via Outlook
 - **Challenge 4: Build a Department Support Topic with Conditional Branching** - Manually author a topic from scratch with department selection menus, conditional branching logic, and a redirect to the document request topic
 - **Challenge 5: Connect Topic to Agent Flow and Test End-to-End** - Wire the EmailDocument topic to the published flow, map variables to flow inputs, and run end-to-end tests
-- **Challenge 6: Publish Agent to Microsoft Teams** - Deploy your agent to Teams and test all topics and flows
+- **Challenge 6: Tune Agent Intelligence - Fallback, Greeting, and Generative Settings** - Customize the Fallback and Greeting system topics, configure generative AI settings, update agent profile and instructions, and validate all behavior in the test panel
+- **Challenge 7: Publish Agent to Microsoft Teams** - Deploy your agent to Teams and test all topics and flows
 
 Throughout each challenge, you will:
 - Build AI agent capabilities using no-code tools
@@ -51,9 +54,9 @@ Throughout each challenge, you will:
 - Test each topic and flow as you go
 - End up with a working agent deployed to Microsoft Teams
 
-## Bonus Challenge (For Early Finishers)
+## Level Up Challenge (For Early Finishers)
 
-If you complete all six challenges ahead of time, a bonus challenge is available. In the bonus challenge, you will expand the agent into a full enterprise-grade assistant by uploading the remaining 30+ Contoso documents, creating a second generative AI topic for new employee onboarding, and re-publishing the enhanced agent to Teams.
+If you complete all seven challenges ahead of time, the Level Up Challenge is waiting. You will expand the agent into a full production-ready enterprise assistant by uploading the remaining 30+ Contoso documents, creating a second generative AI topic for new employee onboarding, re-publishing the enhanced agent to Teams, and analyzing real performance data using the Copilot Studio Analytics Dashboard. This is where you go from lab exercise to real-world deployment skill.
 
 ## Challenge Overview
 
@@ -64,6 +67,8 @@ Next, you build an agent flow within Copilot Studio (no external Power Automate 
 After that, you manually author a **DepartmentSupport** topic from scratch - no AI generation. You design the conversation flow node by node, configure a department selection question with four options (HR, Finance, IT, General), create conditional branches that respond with department-specific guidance referencing the relevant Contoso documents, and add a redirect that hands off to the document request topic when the employee wants a document emailed.
 
 Next, you use Copilot Studio's generative AI feature to create the EmailDocument conversational topic by describing what you want in plain language. The AI generates trigger phrases, conversation flows, and variable capturing for you. You then wire this topic to your agent flow by mapping conversation variables to flow input parameters and run end-to-end tests.
+
+Before publishing, you tune the agent's intelligence layer - customizing the Fallback system topic to redirect confused users to the DepartmentSupport topic instead of dead-ending them, personalizing the Greeting system topic with a branded Contoso welcome, adjusting generative AI content moderation settings, and updating the agent's profile and system instructions so it behaves like a real enterprise product.
 
 Finally, you publish your agent to Microsoft Teams, test all topics and flows, and make it available to your organization.
 

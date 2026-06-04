@@ -1,8 +1,10 @@
-# Bonus Challenge: Expand to Full Enterprise Agent and Re-Publish
+# Level Up Challenge: From Prototype to Production-Ready Enterprise Agent
 
 ## Introduction
 
-Congratulations on completing the core challenges! In this bonus challenge, you will expand your Knowledge Navigator Agent from a focused 10-document assistant into a full enterprise-grade knowledge hub covering 40+ documents across all Contoso departments. You will also create a second generative AI topic for new employee onboarding, wire it to the Email Document Flow, and re-publish the enhanced agent to Teams.
+You built it. You tuned it. You deployed it. Now it is time to go further.
+
+In this Level Up Challenge, you will transform your Knowledge Navigator Agent from a well-built prototype into a production-ready enterprise system. You will flood the knowledge base with 40+ Contoso documents, add a purpose-built onboarding experience for new hires, wire it all to the existing email flow, re-deploy to Teams, and then use the Copilot Studio Analytics Dashboard to measure how well your agent actually performs. This last step is what separates agents that get switched off after a week from ones that become mission-critical tools your organization depends on.
 
 ## What You Will Do
 
@@ -13,6 +15,7 @@ Congratulations on completing the core challenges! In this bonus challenge, you 
 5. Connect the onboarding topic to the existing Email Document Flow
 6. Re-publish the enhanced agent to Microsoft Teams
 7. Test all new and existing capabilities in Teams
+8. Open the Analytics Dashboard and review real performance data from your test conversations
 
 ## Part 1: Expand the SharePoint Knowledge Source
 
@@ -192,6 +195,8 @@ Congratulations on completing the core challenges! In this bonus challenge, you 
 
 ## Part 4: Re-Publish and Validate in Teams
 
+> **Checkpoint:** Before republishing, make sure you have saved all changes in the NewEmployeeOnboarding topic and confirmed the Email Document Flow is still published and active. A quick check in the Flows section of the agent confirms this.
+
 ### Publish the Updated Agent
 
 1. In Copilot Studio, click the **Publish** button (top-right of the agent canvas).
@@ -204,7 +209,7 @@ Congratulations on completing the core challenges! In this bonus challenge, you 
 
 1. Open **Microsoft Teams** in your browser.
 
-1. Navigate to the **Internal Knowledge Navigator** app (already installed in Challenge 6).
+1. Navigate to the **Internal Knowledge Navigator** app (already installed in Challenge 7).
 
 1. If the app does not show updated behavior immediately, close and re-open the chat with the agent.
 
@@ -262,6 +267,71 @@ Congratulations on completing the core challenges! In this bonus challenge, you 
 
 1. Verify the **DepartmentSupport** topic triggers and the Finance department message is displayed.
 
+## Part 5: Read Your Agent's Performance in Analytics
+
+Your agent is live and being used. Now you will review real data from your test conversations to understand what is working and what needs tuning. The Copilot Studio Analytics Dashboard captures every conversation, topic trigger, and unrecognized intent from the moment you published.
+
+### Open the Analytics Dashboard
+
+1. In **Microsoft Copilot Studio**, open your **Internal Knowledge Navigator** agent.
+
+1. In the left navigation pane, click **Analytics**.
+
+1. You will land on the **Overview** tab. Review the top-level metrics:
+   - **Total conversations** - how many test sessions you ran
+   - **Engagement rate** - percentage of conversations where the agent responded with a topic (not just the fallback)
+   - **Resolution rate** - percentage of conversations where the user's need was resolved
+   - **Escalation rate** - percentage of conversations that escalated to a human (or hit the Fallback topic)
+
+   > **Note:** Since this is a lab environment, you will see a small number of conversations from your own test runs. In production, these numbers reflect real employee usage. Resolution rate is the key metric to track over time.
+
+### Inspect Topic Performance
+
+1. Click the **Topics** tab in the Analytics navigation.
+
+1. You will see a table listing every topic that was triggered, ranked by the number of times it was triggered.
+
+1. Look for the following topics in the list and note how many times each was triggered during your tests:
+   - **DepartmentSupport**
+   - **EmailDocument**
+   - **NewEmployeeOnboarding**
+   - **Fallback** (system topic - check how often the agent could not match a query)
+
+1. Click on **DepartmentSupport** to drill into its performance. Review which branches (HR, Finance, IT, General) were triggered most often during your test conversations.
+
+1. Click **Back** and then click on **Fallback** in the topic list. Note how many times the Fallback was triggered - this tells you how often the agent could not recognize user intent.
+
+   > **Insight:** A high Fallback rate in production means your trigger phrases need expansion or users are asking in ways you did not anticipate. You can fix this by adding more trigger phrases to your topics or by tuning the AI settings you configured in Challenge 6.
+
+### Review Unrecognized Utterances
+
+1. Click the **Unrecognized** tab (may also appear as **Unrecognized phrases** depending on your tenant version).
+
+1. This tab lists the exact messages users sent that the agent could not match to any topic.
+
+1. Review the list from your test sessions. If you typed the "What is the weather like in Narnia?" test from Challenge 6, you should see it here.
+
+1. For each unrecognized phrase in the list:
+   - Ask yourself: should this trigger an existing topic?
+   - If yes, go to that topic and add the phrase as a new trigger phrase.
+   - If no, it is a genuine out-of-scope query that the Fallback redirect handles correctly.
+
+1. Add at least one phrase from the Unrecognized list as a new trigger phrase to the most relevant topic. Click **Save** on that topic to apply the improvement.
+
+   > **Note:** This loop - deploy, observe, improve - is the real-world agent maintenance cycle. Organizations that build high-performing agents review their Unrecognized phrases weekly and keep expanding topic coverage based on what employees actually ask.
+
+### Check Conversation Transcripts
+
+1. Click the **Conversations** tab.
+
+1. Select any conversation from the list to open the transcript.
+
+1. Read through the full conversation flow. You can see exactly which topic was triggered, which nodes were visited, and where the conversation ended.
+
+1. Look for a conversation where you tested the EmailDocument topic. Verify the transcript shows the correct topic nodes being traversed (question nodes, variable capture, the flow action node).
+
+1. Look for a conversation where the agent routed through Fallback to DepartmentSupport. Verify the transcript shows the full redirect path.
+
 ## Success Criteria
 
 - SharePoint knowledge source expanded to 40+ documents covering all Contoso departments
@@ -271,14 +341,18 @@ Congratulations on completing the core challenges! In this bonus challenge, you 
 - Onboarding document request email is received in the lab inbox
 - Agent re-published to Teams with all features working
 - All previously built topics (EmailDocument, DepartmentSupport) continue to work correctly after re-publish
+- Analytics Dashboard reviewed: total conversations, topic triggers, and Fallback rate noted
+- At least one unrecognized utterance identified and added as a trigger phrase to improve agent coverage
 
-## Congratulations!
+## You Leveled Up!
 
-You have built a full enterprise-grade **Internal Knowledge Navigator Agent** covering 40+ documents, multiple conversational topics (AI-generated and manually authored), conditional branching, automated email actions, and deployment to Microsoft Teams - all without writing a single line of code!
+You have built and shipped a production-ready **Internal Knowledge Navigator Agent** covering 40+ documents, multiple conversational topics (AI-generated and manually authored), conditional branching, automated email actions, intelligent fallback routing, a branded greeting, generative AI tuning, deployment to Microsoft Teams, and a live analytics review loop - all without writing a single line of code.
 
-### Real-World Applications:
+This is not a demo. This is how real enterprise agents get built.
 
-This type of solution can transform knowledge management across many enterprise scenarios:
+### Where This Goes in the Real World
+
+This pattern powers enterprise AI transformations across many domains:
 
 - **HR and Employee Services:** Onboarding guidance, policy lookups, leave request assistance, benefits inquiries
 - **IT Support:** Self-service help desk, hardware request processing, security policy distribution, software access guidance
@@ -287,11 +361,4 @@ This type of solution can transform knowledge management across many enterprise 
 - **Sales Enablement:** Playbook distribution, product documentation access, pricing guideline lookups
 - **Operations:** Vendor onboarding, process documentation, supply chain procedure guidance
 
-### Real-World Applications:
-
-This solution can improve knowledge management across:
-- **HR and Employee Services:** Onboarding, policies, benefits inquiries
-- **IT Support:** Self-service help desk, documentation access
-- **Compliance and Training:** Policy distribution, procedure guidance
-- **Sales Enablement:** Playbooks, product information, pricing guidelines
-- **Operations:** Process documentation, vendor management, procurement workflows
+The analytics skills you practiced in Part 5 are what keep these agents improving month after month. You now know how to build them and how to measure them.
