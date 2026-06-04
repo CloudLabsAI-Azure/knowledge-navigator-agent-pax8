@@ -86,8 +86,6 @@ Generative answers control how the agent uses your SharePoint knowledge source t
 
 1. In the left navigation pane, click **Settings** (the gear icon).
 
-1. Select **AI** from the Settings menu.
-
 1. Under **Generative AI**, review the current configuration options:
    - **Content moderation** - controls how strictly the agent filters responses
    - **Knowledge** - controls whether the agent searches the connected knowledge source
@@ -95,66 +93,6 @@ Generative answers control how the agent uses your SharePoint knowledge source t
 1. Set **Content moderation** to **Moderate**. This setting balances helpfulness with safety, allowing the agent to provide detailed policy information without over-filtering.
 
    > **Note:** **High** causes the agent to refuse many legitimate policy questions. **Low** allows unrestricted responses. **Moderate** is the recommended setting for an internal HR/IT knowledge agent.
-
-1. Under the **Knowledge** section, verify that your SharePoint knowledge source (**contoso-documents-<inject key="DeploymentID" enableCopy="false"></inject>**) appears in the list with its toggle turned **on** (blue).
-
-1. Click **Save** to apply the settings.
-
-### Step 4: Validate Fallback Routing in the Test Panel
-
-Test that your fallback customization works correctly by sending a query the agent cannot recognize.
-
-1. Click the **Test** button to open the test panel.
-
-1. Click **New test session**.
-
-1. Type a message that would not match any topic or knowledge document:
-
-   ```
-   What is the weather like in Narnia?
-   ```
-
-1. Verify the agent:
-   - Shows your new custom fallback message (*"I am sorry, I could not find an answer..."*)
-   - Automatically transitions into the **DepartmentSupport** topic and presents the department selection menu
-
-1. Select a department option to confirm the full redirect flow completes successfully.
-
-### Step 5: Update the Agent Profile and System Instructions
-
-Before publishing, update the agent's display name, description, and system instructions so it presents professionally to employees in Teams.
-
-1. In the left navigation pane, click **Settings**.
-
-1. Select **Agent details**.
-
-1. Update the **Name** field to:
-
-   ```
-   Internal Knowledge Navigator
-   ```
-
-1. Update the **Description** field to:
-
-   ```
-   Your internal Contoso AI assistant for finding company policies, procedures, and documents across HR, Finance, and IT. Available 24/7 to answer questions and connect you with the right team.
-   ```
-
-1. Update the **Instructions** field (agent-level system prompt) to:
-
-   ```
-   You are the Internal Knowledge Navigator for Contoso. Your role is to help employees find accurate information from company documents stored in SharePoint. Always ground your answers in the connected knowledge source. Do not speculate or invent policy details. If you cannot find an answer, offer to connect the employee with the right department or help them request the document via the email document flow.
-   ```
-
-1. Click **Save** to apply all changes.
-
-1. Open the test panel, start a **New test session**, and type:
-
-   ```
-   What is the company stock price?
-   ```
-
-1. Confirm the agent responds helpfully without fabricating financial data - either acknowledging it does not have that information or routing through the Fallback redirect.
 
 ## Success Criteria
 
