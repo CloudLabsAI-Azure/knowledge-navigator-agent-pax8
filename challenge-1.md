@@ -157,5 +157,3 @@ https://github.com/CloudLabsAI-Azure/hack-in-a-day-data/archive/refs/heads/knowl
 - [Create your first copilot](https://learn.microsoft.com/microsoft-copilot-studio/fundamentals-get-started)  
 
 Click **Next** at the bottom of the page to proceed to the next page.
-
-   ![](./media/auto-it-gt-gr-g4.png)

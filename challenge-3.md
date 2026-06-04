@@ -157,5 +157,3 @@ Before starting this challenge, ensure you have:
 - [Office 365 Outlook connector](https://learn.microsoft.com/connectors/office365/)
 
 Click **Next** at the bottom of the page to proceed to the next page.
-
-   ![](./media/auto-it-gt-gr-g6.png)

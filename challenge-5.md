@@ -91,5 +91,3 @@ Before starting this challenge, ensure you have:
 - [Work with variables](https://learn.microsoft.com/microsoft-copilot-studio/authoring-variables)
 
 Click **Next** at the bottom of the page to proceed to Challenge 6.
-
-   ![](./media/auto-it-gt-gr-g8.png)

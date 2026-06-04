@@ -92,5 +92,3 @@ Before starting this challenge, ensure you have:
 - [Generative answers with uploaded files](https://learn.microsoft.com/microsoft-copilot-studio/nlu-boost-node)  
 
 Click **Next** at the bottom of the page to proceed to the next page.
-
-   ![](./media/auto-it-gt-gr-g5.png)

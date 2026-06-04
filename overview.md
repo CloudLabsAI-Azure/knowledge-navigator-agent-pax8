@@ -83,6 +83,4 @@ Learner Support Contacts:
 
 Click **Next** at the bottom of the page to proceed to the next page.
 
-   ![](./media/auto-it-gt-gr-g2.png)
-
 ## Happy Hacking!!

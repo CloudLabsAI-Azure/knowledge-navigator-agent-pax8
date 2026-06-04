@@ -111,6 +111,4 @@ You have successfully built and deployed an **AI-powered Internal Knowledge Navi
 
 If you still have time remaining, proceed to the **Level Up Challenge** to expand your agent into a full enterprise-grade production assistant.
 
-Click **Next** at the bottom of the page to proceed to the Bonus Challenge.
-
-   ![](./media/auto-it-gt-gr-g7.png)
+Click **Next** at the bottom of the page to proceed to the Level Up Challenge.

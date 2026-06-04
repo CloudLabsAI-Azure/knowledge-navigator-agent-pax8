@@ -293,5 +293,3 @@ After all four branch messages are configured, add a shared follow-up action aft
 - [Work with variables](https://learn.microsoft.com/microsoft-copilot-studio/authoring-variables)
 
 Click **Next** at the bottom of the page to proceed to the next page.
-
-   ![](./media/auto-it-gt-gr-g7.png)
