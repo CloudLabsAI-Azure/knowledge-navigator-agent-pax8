@@ -30,7 +30,7 @@ https://github.com/CloudLabsAI-Azure/hack-in-a-day-data/archive/refs/heads/knowl
 1. Navigate to the **Microsoft 365** portal:
 
    ```
-   https://www.office.com
+   https://myapps.microsoft.com
    ```
 
 1. Sign in with the provided credentials:
@@ -138,7 +138,7 @@ https://github.com/CloudLabsAI-Azure/hack-in-a-day-data/archive/refs/heads/knowl
 
 1. Note that specific knowledge questions won't work yet. You'll add knowledge sources in the next challenge.
 
-<validation step="1b18cb99-3de1-4ea8-8c3f-1839a06f8bf4" />
+<validation step="e3108aa0-e0a3-40eb-aaf7-a1af8efb199e" />
  
 > **Congratulations** on completing the Challenge! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding Challenge. If you receive a success message, you can proceed to the next Challenge. 
