@@ -11,7 +11,7 @@ In this challenge, you will create an AI-powered Internal Knowledge Navigator us
 Please download and extract the datasets required for this challenge here:
 
 ```
-https://github.com/CloudLabsAI-Azure/hack-in-a-day-data/archive/refs/heads/knowledge-datasets.zip
+https://github.com/CloudLabsAI-Azure/hack-in-a-day-data/archive/refs/heads/knowledge-nav.zip
 ```
 
 > **Note:** For this challenge, you will only upload 10 documents from the HR, Finance, and IT folders. The remaining documents will be used in the Bonus Challenge if you finish early.
