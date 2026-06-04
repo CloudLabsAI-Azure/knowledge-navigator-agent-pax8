@@ -9,7 +9,7 @@ In this challenge, you will manually create a **DepartmentSupport** topic that p
 ## Challenge Objectives
 
 - Create a new topic manually (without using the AI generator)
-- Add trigger phrases so the agent knows when to start this topic
+- Add a topic description so the agent knows when to start this topic
 - Use a Question node with multiple-choice options to collect a department selection
 - Add Condition nodes to branch the conversation based on the user's choice
 - Configure a unique response Message for each department branch
@@ -39,35 +39,15 @@ Before starting this challenge, ensure you have:
 
 1. Click **Save** to save the topic name.
 
-### Step 2: Configure Trigger Phrases
+### Step 2: Configure the Topic Description
 
-1. In the authoring canvas, click on the **Phrases** box inside the **Trigger** node at the top.
+1. In the authoring canvas, click on the **Trigger** node at the top.
 
-1. Add the following trigger phrases one at a time by typing each phrase and pressing **Enter** after each:
+1. In the **Describe what this topic does** field, enter the following description:
 
    ```
-   I need department help
+   Helps employees get support from a specific department. Routes the user to HR, Finance, IT, or General guidance based on their selection, and offers to send a relevant policy document by email.
    ```
-   ```
-   department support
-   ```
-   ```
-   help from HR
-   ```
-   ```
-   help from IT
-   ```
-   ```
-   help from Finance
-   ```
-   ```
-   contact a department
-   ```
-   ```
-   which department handles
-   ```
-
-1. You should now see 7 trigger phrases listed in the Trigger node.
 
 1. Click **Save**.
 
@@ -277,7 +257,7 @@ After all four branch messages are configured, add a shared follow-up action aft
 
 ## Success Criteria
 
-- Created the **DepartmentSupport** topic from blank (not AI-generated) with 7 trigger phrases
+- Created the **DepartmentSupport** topic from blank (not AI-generated) with a topic description configured in the Trigger node
 - Topic has a Question node with 4 multiple-choice department options (HR, Finance, IT, General/Other)
 - Each department branch has a unique informational message referencing the relevant Contoso documents
 - A follow-up Question node offers to send a document by email
