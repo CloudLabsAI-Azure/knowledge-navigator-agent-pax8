@@ -84,7 +84,7 @@ Test the topics you created and the agent's knowledge search capability:
 
 5. Verify the agent responds with the HR department message.
 
-<validation step="09e05d19-df23-42fd-8688-4262e3dcdb95" />
+<validation step="9751e1d6-33e8-49fa-96b2-31b3df217ba5" />
  
 > **Congratulations** on completing the Challenge! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding Challenge. If you receive a success message, you can proceed to the next Challenge. 

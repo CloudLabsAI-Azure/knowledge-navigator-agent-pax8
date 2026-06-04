@@ -76,13 +76,6 @@ Before starting this challenge, ensure you have:
 
 1. Check your email inbox (**<inject key="AzureAdUserEmail"></inject>**) to verify you received the document access request email with the document name, reason, and requester email.
 
-<validation step="9751e1d6-33e8-49fa-96b2-31b3df217ba5" />
- 
-> **Congratulations** on completing the Challenge! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding Challenge. If you receive a success message, you can proceed to the next Challenge. 
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
-
 ## Success Criteria
 
 - The **EmailDocument** topic is successfully connected to the **Email Document Flow** via the tool action node
