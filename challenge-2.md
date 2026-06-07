@@ -30,7 +30,7 @@ Before starting this challenge, ensure you have:
    https://copilotstudio.microsoft.com
    ```
 
-1. Ensure you're in the **ODL_User<inject key="DeploymentID" enableCopy="false"></inject>** environment (check the environment selector in the top-right).
+1. Ensure you're in the **ODL_User<inject key="DeploymentID" enableCopy="false"></inject>'s Environment** environment (check the environment selector in the top-right).
 
 1. Select your **Internal Knowledge Navigator** agent from the agents list.
 
