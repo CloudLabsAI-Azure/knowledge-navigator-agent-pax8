@@ -70,7 +70,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the Res
 
    ![](./media/uppowadminimg3.png)
 
-1. On this page, check whether `https://sandboxailabs1001.onmicrosoft.com/cloudlabs.ai` or `https://cloudlabssandbox.onmicrosoft.com/cloudlabs.ai/` is already added. If either one is present, skip to Step 17. Otherwise, proceed with the steps below.
+1. On this page, check whether `https://sandboxailabs1001.onmicrosoft.com/cloudlabs.ai` is already added. **If present, skip to Step 17.** Otherwise, proceed with the steps below.
 
    ![](./media/powerplat.png)
 
@@ -78,7 +78,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the Res
 
    ![](./media/pro-activ-gg-g4.png)
 
-1. In the **Add an app from Microsoft Entra ID** pane, enter `https://sandboxailabs1001.onmicrosoft.com/cloudlabs.ai` or `https://cloudlabssandbox.onmicrosoft.com/cloudlabs.ai/` in the search box **(1)**, select whichever app is available from the results **(2)**, and then click **Add (3)**.
+1. In the **Add an app from Microsoft Entra ID** pane, enter `https://sandboxailabs1001.onmicrosoft.com/cloudlabs.ai` in the search box **(1)**, select whichever app is available from the results **(2)**, and then click **Add (3)**.
 
    ![](./media/pro-activ-gg-g5.png)
 
