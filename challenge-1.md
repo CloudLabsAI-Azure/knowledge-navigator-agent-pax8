@@ -41,7 +41,7 @@ https://github.com/CloudLabsAI-Azure/hack-in-a-day-data/archive/refs/heads/knowl
 
 1. From the Microsoft 365 apps, select **SharePoint**.
 
-   > **Note:** If you are not able to see SharePoint in the MyApps section, navigate to `https://cloudlabssandbox.sharepoint.com/` directly to access SharePoint.
+   > **Note:** If you are not able to see SharePoint in the MyApps section, navigate to `https://sandboxailabs1001.sharepoint.com/` directly to access SharePoint.
 
 1. Click on **+ Create site** and select **Team site**.
 
